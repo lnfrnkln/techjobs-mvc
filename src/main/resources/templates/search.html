@@ -13,6 +13,7 @@
     <form th:action="@{/search/results}">
         <h2>Search by:</h2>
 
+
         <p>
             <span th:each="column : ${columns}">
                 <input
@@ -37,6 +38,13 @@
     <hr />
 
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
+
+    <div th:replace="fragments :: search"></div>
+
+
+
+
+
 
 </div>
 
